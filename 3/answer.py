@@ -7,6 +7,5 @@ def count_valid_sequences(n):
         return 7
     return count_valid_sequences(n - 1) + count_valid_sequences(n - 2) + count_valid_sequences(n - 3)
 
-# Read input
 n = int(input().strip())
 print(count_valid_sequences(n))
